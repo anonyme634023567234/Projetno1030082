@@ -1,0 +1,542 @@
+body {
+    min-height: (hauteur réelle);
+    background-image: linear-gradient(to bottom, #E8FFFF, #6BFAFA);
+    padding-top: 120px;
+    position: relative;
+    
+}
+.titre-barre2 {
+    position: absolute;
+    top: 300px; 
+    width: 100%;              /* prend toute la largeur */
+    background-color: #000000; /* couleur du rectangle */
+    padding: 20px ;          /* espace autour du titre */
+    text-align: center;      /* centre le texte */
+}
+
+.titre-barre2 h1 {
+    color: rgb(255, 255, 255);             /* couleur du texte */
+    margin: 0;                /* enlève les marges par défaut */
+    font-size: 2em;           /* taille du titre */
+}
+.postext{
+    position:absolute;
+    top: 400px;
+    left: 50%;            /* centre horizontalement */
+    transform: translateX(-50%);
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+.postext1{
+    position:absolute;
+    top: 300px;
+    left:80px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+.postext2{
+    position:absolute;
+    top: 700px;
+    left:200px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+.postext3{
+    position:absolute;
+    top: 900px;
+    left:650px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+
+.postext4{
+    position:absolute;
+    top: 1830px;
+    left:80px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+
+.postext5{
+    position:absolute;
+    top: 2300px;
+    left:650px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+.postext6{
+    position:absolute;
+    top: 3250px;
+    left:100px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+
+.postext7{
+    position:absolute;
+    top: 3600px;
+    left:600px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+
+}
+.postext8{
+    position: absolute;
+    top: 4270px;
+    right: 270px;
+    font-size: 15px;
+}
+.postext9{
+    position: absolute;
+    top: 4750px;
+    right: 370px;
+    font-size: 15px;
+}
+#postext1{
+    position: absolute;
+    top: 750px;
+    left: 650px;
+    font-size: 15px;
+}
+#postext2{
+    position: absolute;
+    top: 750px;
+    left: 910px;
+    font-size: 15px;
+}
+#postext3{
+    position: absolute;
+    top: 750px;
+    left: 1180px;
+    font-size: 15px;
+}
+#postext4{
+    position:absolute;
+    top: 850px;
+    left:80px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+#postext5{
+    position:absolute;
+    top: 1900px;
+    left:80px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+#postext6{
+    position:absolute;
+    top: 2200px;
+    left:500px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+#postext7{
+    position:absolute;
+    top: 1000px;
+    left: 50%;            /* centre horizontalement */
+    transform: translateX(-50%);
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+#postext8{
+    position:absolute;
+    top: 1380px;
+    left: 80px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+#postext9{
+    position:absolute;
+    top: 2100px;
+    left: 370px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+#postext10{
+    position:absolute;
+    top: 2300px;
+    right: 310px;
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+#postext11{
+    position:absolute;
+    top: 2700px;
+    left: 50%;            /* centre horizontalement */
+    transform: translateX(-50%);
+     p{
+        font-size: 25px;
+
+    }
+    ul{
+        font-size: 25px;
+ 
+    }
+}
+.postitre{
+    position: absolute;   /* permet de placer où tu veux */
+    top: 1200px;          /* position verticale */
+    left: 50%;            /* centre horizontalement */
+    transform: translateX(-50%); /* recentre parfaitement */
+    text-align: center;   /* centre le texte dans le bloc */
+    width: max-content;   /* s'adapte au texte */
+}
+
+.postitre2{
+    position: absolute;   /* permet de placer où tu veux */
+    top: 1700px;          /* position verticale */
+    left: 50%;            /* centre horizontalement */
+    transform: translateX(-50%); /* recentre parfaitement */
+    text-align: center;   /* centre le texte dans le bloc */
+    width: max-content;   /* s'adapte au texte */
+}
+.postitre3{
+    position: absolute;   /* permet de placer où tu veux */
+    top: 2500px;          /* position verticale */
+    left: 50%;            /* centre horizontalement */
+    transform: translateX(-50%); /* recentre parfaitement */
+    text-align: center;   /* centre le texte dans le bloc */
+    width: max-content;   /* s'adapte au texte */
+}
+.postitre4{
+    position: absolute;   /* permet de placer où tu veux */
+    top: 3500px;          /* position verticale */
+    left: 50%;            /* centre horizontalement */
+    transform: translateX(-50%); /* recentre parfaitement */
+    text-align: center;   /* centre le texte dans le bloc */
+    width: max-content;   /* s'adapte au texte */
+}
+.postitre5{
+    position: absolute;   /* permet de placer où tu veux */
+    top: 1400px;          /* position verticale */
+    left: 50%;            /* centre horizontalement */
+    transform: translateX(-50%); /* recentre parfaitement */
+    text-align: center;   /* centre le texte dans le bloc */
+    width: max-content;   /* s'adapte au texte */
+}
+.postitre6{
+    position: absolute;   /* permet de placer où tu veux */
+    top: 2100px;          /* position verticale */
+    left: 50%;            /* centre horizontalement */
+    transform: translateX(-50%); /* recentre parfaitement */
+    text-align: center;   /* centre le texte dans le bloc */
+    width: max-content;   /* s'adapte au texte */
+}
+.inspi1{
+    position:absolute;
+    top: 1350px;
+    right:480px;
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000;
+
+}
+.img-pos1{
+    position:absolute;
+    top: 500px;
+    right:80px;
+}
+
+.img-pos2{
+    position:absolute;
+    top: 900px;
+    left:80px;
+}
+.img-pos3{
+    position:absolute;
+    top: 1350px;
+    left:200px;
+}
+.img-pos4{
+    position:absolute;
+    top: 1350px;
+    right:200px;
+}
+.img-pos5{
+    position:absolute;
+    top: 1830px;
+    right:200px;
+}
+
+.img-pos6{
+    position:absolute;
+    top: 2200px;
+    left:80px;
+}
+.img-pos7{
+    position:absolute;
+    top: 2600px;
+    left:500px;
+}
+
+.img-pos8{
+    position:absolute;
+    top: 2600px;
+    right:500px;
+}
+.img-pos9{
+    position:absolute;
+    top: 3150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-pos10{
+    position:absolute;
+    top: 3600px;
+    left:80px;
+}
+.img-pos11{
+    position:absolute;
+    top: 3900px;
+    right:80px;
+}
+
+.img-pos12{
+    position:absolute;
+    top: 4100px;
+    left:50px;
+}
+.img-pos13{
+    position:absolute;
+    top: 4400px;
+    left:80px;
+}
+.img-pos14{
+    position:absolute;
+    top: 4370px;
+    right:80px;
+}
+.img-pos15{
+    position:absolute;
+    top: 1000px;
+    right:600px;
+}
+.img-pos16{
+    position:absolute;
+    top: 1000px;
+    left:600px;
+}
+.img-pos17{
+    position:absolute;
+    top: 1900px;
+    left:100px;
+}
+.img-pos18{
+    position:absolute;
+    top: 2200px;
+    left:400px;
+}
+.img-pos19{
+    position:absolute;
+    top: 2200px;
+    left:700px;
+}
+.videopos{
+    position:absolute;
+    top: 400px;
+    left: 600px;
+    width: 200px; 
+    height: auto;     
+}
+.videopos1{
+    position:absolute;
+    top: 400px;
+    left: 870px;
+    width: 200px; 
+    height: auto;  
+}
+.videopos2{
+    position:absolute;
+    top: 400px;
+    left: 1150px;
+    width: 200px; 
+    height: auto;     
+}
+.videopos3{
+    position:absolute;
+    top: 1600px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px; 
+    height: auto;     
+}
+.videopos4{
+    position:absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; 
+    height: auto;     
+}
+.videopos5{
+    position:absolute;
+    top: 2000px;
+    right: 100px;
+    width: 500px; 
+    height: auto;     
+}
+
+
+
+.centre {
+    text-align: center;
+}
+ p{
+        font-size: 25px;
+
+    }
+h1{
+    font-size: 40px;
+}
+.titre-barre {
+    position: fixed;
+    top: 0; 
+    width: 100%;              /* prend toute la largeur */
+    background-color: #000000; /* couleur du rectangle */
+    padding: 20px ;          /* espace autour du titre */
+    text-align: center;      /* centre le texte */
+    z-index: 1000;
+}
+
+.titre-barre h1 {
+    color: rgb(255, 255, 255);             /* couleur du texte */
+    margin: 0;                /* enlève les marges par défaut */
+    font-size: 2em;           /* taille du titre */
+}
+
+/* Menu latéral */
+.menu-lateral {
+    position: fixed;          /* reste collé à gauche */
+    top: 0;
+    left: 0;
+    width: 60px;              /* largeur réduite */
+    height: 100vh;            /* toute la hauteur */
+    background-color: #000000;
+    overflow: hidden;         /* cache le texte quand menu réduit */
+    transition: width 0.3s;   /* animation fluide */
+    z-index: 1000;
+}
+
+/* Animation au survol */
+.menu-lateral:hover {
+    width: 220px;             /* largeur quand on survole */
+}
+
+/* Style de la liste */
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral li {
+    padding: 20px;
+}
+
+.menu-lateral a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    white-space: nowrap;      /* empêche le texte de revenir à la ligne */
+    display: block;
+}
+
+.menu-lateral a:hover {
+    background-color: #444;
+}
+

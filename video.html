@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projets Valentin POCHET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titre-barre">
+    <h1 class="centre"><u>Mes Projets Audiovisuel</u></h1>
+    </div>
+    <h1 class="centre"><u>Projet Vidéo informatives et critiques :</u></h1>
+    <div class="postext1"><p>Je me suis lancé sur les réseaux il y a maintenant un an, où j’ai pu réaliser de nombreuses vidéos.
+    <br>Ces contenus ont des objectifs variés. Certains proposent des critiques de mangas, tandis que d’autres présentent des informations sur des périodes historiques qui me 
+    <br>passionnent, comme l’âge d’or de la piraterie.
+    </p> 
+    </div>
+    <p id="postext1">Vidéo critique de la 
+    <br>partie 1 du manga 
+    <br>JoJo's Bizarre Adventure</p>
+    <p id="postext2">video sur Barbe Noie</p>
+    <p id="postext3">video sur Anne Bonny 
+    <br>et Mary Read</p>
+    <p id="postext4">La réalisation de ces vidéos m'ont permis d'en apprendre plus sur la gestion de l'éclairage, du cadrage mais également beaucoup de chose en montage vidéo.
+    <br>En effet avec le temps j'ai put apprendre a utiliser différents logiciels de montage tel que cap cut, pour des montages plus simplifié en format court,
+    <br>et Da Vinci Resolve pour des montages plus complets et des formats de vidéos longues pour youtube notamment.
+    </p>
+    <p id="postext5">J'ai également participé à la création d'un court métrage d'horreur ce qui en plus de mes compétences technique m'a permis de développer un véritable sens du travail d'équipe
+    <br>que j'ai put mettre à profit dans d'autres projets.
+    <br>Cette expérience a, pour moi, été un véritable tremplin car il m'a permis d'en apprendre plus sur certains code du cinéma mais également des techniques de cadrage ou 
+    <br>d'éclairage pour avoir un bon rendu. (la vidéo a dut être compressé, veuillez m'excuser pour la qualité de l'image).    
+    </p>
+    <p id="postext6">Après une soirée, Louis, personnage introverti, reste dormir chez son ami Maxence.
+    <br>
+    <br>Seulement, au moment de dormir, Louis présente un comportement étrange. Il sourit 
+    <br>
+    <br>dans le vide et invite Maxence à en faire de même pour ne pas énerver le "monstre".
+    <br>
+    <br>Maxence restera sceptique face à cette déclaration, mais ça c'etait avant que des 
+    <br> 
+    <br>événements étranges commencent à intervenir durant leurs nuits.   
+    </p>
+    
+    <video class="videopos" controls >
+    <source src="videos/c5ef4c2e7d5780ed6e29735c03031b59.mp4"  type="video/mp4">
+    </video>
+    <video class="videopos1" controls >
+    <source src="videos/6708abef9f716b57e5a359e059b236d6.mp4"  type="video/mp4">
+    </video>
+    <video class="videopos2" controls >
+    <source src="videos/c13b0d3e2cf45c0188b10683ad227428.mp4"  type="video/mp4">
+    </video>
+    <video class="videopos3" controls >
+    <source src="videos/SMILE.mp4"  type="video/mp4">
+    </video>
+    <img src="DaVinci_Resolve_Studio.png"
+    width="300px" height="auto" class="img-pos15">
+    <img src="capcut-logo-square-rounded-capcut-logo-capcut-logo-free-download-free-png.png"
+    width="300px" height="auto" class="img-pos16">
+    <h1 class="postitre5"><u>Court métrage d'horreur "<i>Smile</i>" :</u></h1>
+    <h1 class="postitre6"><u>Synopsis :</u></h1>
+
+
+    <div class="menu-lateral">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="video.html">Audiovisuel</a></li>
+            <li><a href="dessin.html">Dessin/Design numérique</a></li>
+            <li><a href="developpement.html">Développement</a></li>
+        </ul>
+    </div>
+
+    
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    let maxBottom = 0;
+
+    // On récupère tous les éléments positionnés en absolute
+    document.querySelectorAll("body *").forEach(el => {
+        const style = window.getComputedStyle(el);
+        if (style.position === "absolute") {
+            const top = parseFloat(style.top);
+            const height = el.offsetHeight;
+            const bottom = top + height;
+            if (bottom > maxBottom) maxBottom = bottom;
+        }
+    });
+
+    // On ajoute une marge de sécurité
+    document.body.style.minHeight = (maxBottom + 200) + "px";
+});
+</script>
+
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projets Valentin POCHET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titre-barre">
+    <h1 class="centre"><u>Mes Projets en lien avec la formation</u></h1>
+    </div> 
+        <p class="centre"> Durant mon parcours, j’ai entrepris différents projets dans le domaine de la création numérique ainsi qu’en développement.
+        <br>Ce site, que j’ai réalisé, rassemble plusieurs de mes travaux. Ils témoignent de mon intérêt, de ma motivation et de ma volonté de progresser 
+        <br>dans les différents axes d’apprentissage du BUT Métiers du Multimédia et de l’Internet.
+        </p>
+        <div class="titre-barre2">
+        <h1 class="centre"><u>Un peu plus sur moi</u></h1>
+        </div>
+        <div class="postext">
+        <p>Après un bac STI2D spécialité SIN, je me suis dirigé vers un BUT GEII, axé sur les 
+        <br>domaines de l’électronique et de l’informatique industrielle. En effet, je nourris depuis mon 
+        <br>enfance une passion pour le numérique et je pensais qu’en me dirigeant dans cette voie, je 
+        <br>serais dans mon élément.
+        <br>
+        <br>Cependant, en intégrant cette filière, je me suis vite rendu compte que j’avais mis de côté 
+        <br>un aspect créatif de ma personnalité. J’ai donc longuement cherché une formation qui 
+        <br>combinerait ma passion pour le numérique avec mon esprit créatif. 
+        <br>Après plusieurs recherches et portes ouvertes, j'ai découvert le BUT MMI.
+        <br>
+        <br>Cette formation qui non seulement présente différents domaines que j’ai déjà en partie 
+        <br>explorés, que ce soit à travers des projets scolaires ou personnels et qui me passionnent, 
+        <br>mais propose également une large palette de compétences utiles, voire indispensables, au 
+        <br>développement de mon avenir professionnel, comme le développement web ou la création 
+        <br>numérique.
+        <br>
+        <br>C’est dans cette optique que j’ai développé ce site, afin de présenter quelques-uns de mes 
+        <br>projets qui témoignent de mon intérêt pour le monde du numérique. Ce site montre 
+        <br>également certaines compétences que j’ai acquises au cours de mon parcours et qui ne 
+        <br>demandent qu’à être développées au sein de votre formation.
+        <br>
+        <br>Vous trouverez mes projets classés par domaine dans le menu ci-contre.
+        </p>
+    </div>
+    <div class="menu-lateral">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="video.html">Audiovisuel</a></li>
+            <li><a href="dessin.html">Dessin/Design numérique</a></li>
+            <li><a href="developpement.html">Développement</a></li>
+        </ul>
+    </div>
+
+    
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    let maxBottom = 0;
+
+    // On récupère tous les éléments positionnés en absolute
+    document.querySelectorAll("body *").forEach(el => {
+        const style = window.getComputedStyle(el);
+        if (style.position === "absolute") {
+            const top = parseFloat(style.top);
+            const height = el.offsetHeight;
+            const bottom = top + height;
+            if (bottom > maxBottom) maxBottom = bottom;
+        }
+    });
+
+    // On ajoute une marge de sécurité
+    document.body.style.minHeight = (maxBottom + 200) + "px";
+});
+</script>
+
+
+</html>

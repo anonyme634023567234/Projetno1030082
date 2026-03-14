@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projets Valentin POCHET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titre-barre">
+    <h1 class="centre"><u>Mes Projets de Développement informatique</u></h1>
+    </div> 
+
+    <h1 class="centre"><u>Jeu Pong sur carte Micro :bit :</u></h1>
+    <p class="postext1">Ce projet a été réalisé dans un cadre scolaire en groupe de 4, l'objectif était de réalisé en C++, sur une carte Micro :bit, le jeu vidéo Pong.
+    <br>Nous avons également, à l'aide de WIX réalisé un site qui résume et explique, dans les grandes lignes le jeu ainsi que le fonctionnement de son programme sous la forme d'un 
+    <br>algorithme.
+    </p>
+    <p id="postext7">Le jeu se joue avec seulement 2 boutons, un à droite et un à gauche, appuyer sur le bouton 
+    <br>de gauche équivaut à déplacer la "raquette" un cran sur la gauche et inversement pour le 
+    <br>bouton de droite.
+    <br>plus de détails sur ce site réalisé par moi sur le site WIX dans le cadre du projet: 
+    <br><a href="https://valentinpochet6.wixsite.com/pong">valentinpochet6.wixsite.com</a></p>
+    
+    <h1 class="postitre"><u>Projet Dragster :</u></h1>
+    <p id="postext8">Dans le cadre d'une course de dragster organisé par notre lycée, nous avions dut réalisé un dragster de zéro en équipe de 3, j'étais chargé de la partie développement de la carte 
+    <br>arduino, utilisé pour tout les dragsters, avec le logiciel MatLab. La principale problèmatique dans la partie développement était de de maintenir la trajectoire du véhicule droite.
+    <br>En effet, pour faire avancer le dragster j'ai assigner une valeur entre 0 et 255 à chacun des deux moteurs situer à l'arrière du véhicule, cette valeur correspondant à la vitesse du 
+    <br>véhicule.
+    <br> 
+    <br>En théorie si les deux moteurs sont asignés à la même valeur ils devraient aller aussi vite l'un que l'autre, faisant ainsi avancer le dragster tout droit, 
+    <br>cependant, en pratique l'un des deux moteurs allait toujours plus vite que l'autre, faisant dévier sa trajectoire, pour régler ce problème j'ai ajouter un valeur appeler delta qui 
+    <br>serait soustraite ou ajouter à la valeur d'un des deux moteurs.
+    <br><u>exemple:</u>
+    <br>
+    <br>        Moteur droit= vitesse; Moteur gauche= vitesse + delta
+    <br>
+    <br>Après test, le dragster dévie à gauche le moteur droit va donc plus vite, on assigne donc une valeur positive au delta qui vient s'ajouter à la vitesse du moteur gauche on 
+    <br>augmente cette valeur ou la diminue après plusieurs tests jusqu'à ce qu'il aille droit.</p>
+    <p id="postext9">design fait en papier 
+    <br>inspiré de Mario Kart</p>
+    <p id="postext10">en marche</p>
+    <p id="postext11">Ces projets m'ont permis, non seulement de développer mes compétences techniques en
+    <br>informatique, mais également permis d'apprendre à travailler en groupe et à réfléchir et 
+    <br>résoudre un problème. Ils m'ont également appris à mener à bien un projet sous les contraintes d'un cahier des charges, des compétences essentiels pour mon projet 
+    <br>professionel.</p>
+
+    <img src="dragster.jpg"
+    width="250px" height="auto" class="img-pos17">
+    <img src="felche.webp"
+    width="250px" height="auto" class="img-pos18">
+    <img src="balho.jpg"
+    width="300px" height="auto" class="img-pos19">
+
+    <video class="videopos4" controls >
+    <source src="videos/VID_20260308_041516_751.mp4"  type="video/mp4">
+    </video>
+    <video class="videopos5" controls >
+    <source src="videos/dragstercourse.mp4"  type="video/mp4">
+    </video>
+
+
+    <div class="menu-lateral">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="video.html">Audiovisuel</a></li>
+            <li><a href="dessin.html">Dessin/Design numérique</a></li>
+            <li><a href="developpement.html">Développement</a></li>
+        </ul>
+    </div>
+
+    
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    let maxBottom = 0;
+
+    // On récupère tous les éléments positionnés en absolute
+    document.querySelectorAll("body *").forEach(el => {
+        const style = window.getComputedStyle(el);
+        if (style.position === "absolute") {
+            const top = parseFloat(style.top);
+            const height = el.offsetHeight;
+            const bottom = top + height;
+            if (bottom > maxBottom) maxBottom = bottom;
+        }
+    });
+
+    // On ajoute une marge de sécurité
+    document.body.style.minHeight = (maxBottom + 200) + "px";
+});
+</script>
+
+</html>
